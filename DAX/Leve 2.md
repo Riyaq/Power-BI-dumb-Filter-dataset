@@ -3,10 +3,28 @@ This can be done by many ways-<br>
 
 1. With Allexcept
 ```
-   Sales by Region = 
+Sales by Region = 
 CALCULATE(
     [Total Sales],
     ALLEXCEPT(Customers, Customers[Region])
 )
 ```
 
+2. With REMOVEFILTERS
+```
+Sales by Region 2 = 
+CALCULATE(
+    [Total Sales],
+    REMOVEFILTERS(Customers),
+    VALUES(Customers[Region])
+)
+```
+3. With ALLEXCEPT
+```
+Sales by Region 3 = 
+CALCULATE(
+    [Total Sales],
+    KEEPFILTERS(VALUES(Customers[Region])),
+    ALL(Customers)
+)
+```
