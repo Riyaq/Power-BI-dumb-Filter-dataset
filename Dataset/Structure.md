@@ -1,5 +1,4 @@
 ### SalesOrder
 | SalesId | ProductId | CustomerId | Date | Quantity | UnitPrice |
 |---|---|---|---|---|---|
-|  |  | Row 1, Col 3 |  | Row 1, Col 2 | Row 1, Col 3 |
-|  |  |  |  |  |  |
+|1  | 101 |201  |15-01-2024  | 2 | 25 |
