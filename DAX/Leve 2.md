@@ -28,3 +28,8 @@ CALCULATE(
     ALL(Customers)
 )
 ```
+### 6. Create a measure to find percentage of Total Sales by Region using related tables.
+
+```
+% of Total Sales by Region 2 = DIVIDE([Total Sales]*100,CALCULATE([Total Sales],all(Sheet1)))
+```
