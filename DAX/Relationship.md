@@ -1,6 +1,6 @@
 ### What happens if you remove the relationship between SalesOrder and Product and try to calculate Total Sales by Category?
 
-Step 1 : Remove relationship btw Product table and SalesOrder.
+Step 1 : Remove relationship btw Product table and SalesOrder. <BR>
 Step 2 : Write code
 ```
 Total sales by Category =
