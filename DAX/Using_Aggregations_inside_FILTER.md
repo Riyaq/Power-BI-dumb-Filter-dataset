@@ -33,4 +33,20 @@ CALCULATE(
 )
 ```
 <img width="1266" height="527" alt="image" src="https://github.com/user-attachments/assets/cc426c4f-af08-492c-9fb7-ba7c8fe7c324" />
-
+<br>
+<br>
+### 3. Calculate Total Sales for products where Avg Transaction Value > 50
+```Sales (Avg Txn > 50) =
+CALCULATE(
+    [Total Sales],
+    FILTER(
+        VALUES(Products[ProductID]),
+        CALCULATE(
+            AVERAGEX(
+                SalesOrders,
+                SalesOrders[Quantity] * SalesOrders[UnitPrice]
+            )
+        ) > 50
+    )
+)
+```
