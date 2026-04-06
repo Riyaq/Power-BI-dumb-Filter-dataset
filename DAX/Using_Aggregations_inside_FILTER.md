@@ -10,6 +10,8 @@ CALCULATE(
     )
 )
 ```
+<img width="1314" height="220" alt="image" src="https://github.com/user-attachments/assets/fd077053-6adf-4491-851c-7ffaad023320" />
+
 ### 2. Calculate the total sales value for products whose average transaction value (UnitPrice * Quantity) is less than $30, but whose total quantity sold is greater than 5.
 ```
 Sales (Avg <30 && Qty >5) =
@@ -28,3 +30,5 @@ CALCULATE(
     )
 )
 ```
+<img width="1266" height="527" alt="image" src="https://github.com/user-attachments/assets/cc426c4f-af08-492c-9fb7-ba7c8fe7c324" />
+
