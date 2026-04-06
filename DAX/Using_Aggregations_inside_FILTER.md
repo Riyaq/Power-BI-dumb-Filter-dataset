@@ -1,4 +1,6 @@
 This is where FILTER becomes essential and cannot be replaced by simple CALCULATE filters.
+<img width="1311" height="191" alt="image" src="https://github.com/user-attachments/assets/9b71eede-490d-421d-bb41-8c6fa2aa1737" />
+
 ### 1. Calculate the total sales value for products that have a total lifetime Quantity sold greater than 5.
 ```
 Sales where lifetime sold > 17 = 
