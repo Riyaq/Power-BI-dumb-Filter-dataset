@@ -1,6 +1,7 @@
 ### 5. Create a measure to find Total Sales by Region using related tables.
 This can be done by many ways-<br>
-
+Best to Worst <br>
+KEEPFILTERS(light weight)> VALUES > ALLEXCEPT(Removes filters except some columns)> ALLSELECTED > REMOVEFILTERS / ALL <br> 
 1. With ALLEXCEPT
 ```
 Sales by Region = 
