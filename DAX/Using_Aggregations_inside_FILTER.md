@@ -51,3 +51,14 @@ CALCULATE(
     )
 )
 ```
+### 4. Calculate the total sales value from customers who have made more than 1 purchase.
+```
+Sales / customer > 1 transactions =
+CALCULATE(
+    [Total Sales],
+    FILTER(
+        VALUES(Customers[CustomerID]),
+        CALCULATE(COUNTROWS(SalesOrders)) > 1
+    )
+)
+```
