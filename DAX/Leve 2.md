@@ -39,3 +39,11 @@ CALCULATE(
 ```
 Sales of Red Product = CALCULATE([Total Sales], Products[Color]="Red")
 ```
+### 8.Calculate the total sales value for sales where the Quantity sold was greater than 2.
+```
+Sales of Product Qty more than 2 =
+CALCULATE(
+    [Total Sales],
+    SalesOrders[Quantity] > 2
+)
+```
