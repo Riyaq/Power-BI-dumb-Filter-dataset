@@ -47,3 +47,10 @@ CALCULATE(
     SalesOrders[Quantity] > 2
 )
 ```
+### 9. Calculate the total sales value for products in the "Premium" category.
+```
+Sales of Premium Product =
+ CALCULATE([Total Sales],
+            Products[Category]="Premium"
+)
+```
