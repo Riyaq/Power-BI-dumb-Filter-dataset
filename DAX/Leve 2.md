@@ -34,3 +34,8 @@ CALCULATE(
 ```
 % of Total Sales by Region 2 = DIVIDE([Total Sales]*100,CALCULATE([Total Sales],all(Sheet1)))
 ```
+
+### 7. Calculate the total sales value, but only for products where the color is "Red".
+```
+Sales of Red Product = CALCULATE([Total Sales], Products[Color]="Red")
+```
