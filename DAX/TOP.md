@@ -26,3 +26,18 @@ CALCULATE (
  )
 )
 ```
+
+### If you find your region slicer is actually not working then use ALLSELECTED instead -
+```
+Top 2 customer = CALCULATE( [Total Sales],
+                            KEEPFILTERS(
+                                        TOPN(2,
+                                        ALLSELECTED(Customer[CustomerName]),
+                                        [Total Sales], DESC)
+                                     )
+                          )
+
+```
+
+
+
